@@ -1,5 +1,5 @@
 {
-  "name": "base-app",
+  "name": "demo-user-management",
   "version": "0.0.0",
   "server": false,
   "private": true,
