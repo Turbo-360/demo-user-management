@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="/css/bootstrap.css" type="text/css" />
+  <style type="text/css">
+  	.gray-box {
+  		text-align: left;
+  		background: #f9f9f9;
+  		margin-bottom: 24px;
+  		border: 1px solid #ddd;
+  		border-radius: 3px;
+  		padding: 12px;
+  	}
+  </style>
+</head>
+
+<body class="container">
+	<div class="row">
+
+		<div class="col-md-10 col-md-offset-1" style="text-align:center;margin-bottom:48px">
+			<h1>Welcome to Turbo</h1>
+			<hr />
+			<div class="gray-box">
+				This is a base project for demonstration puruposes. This app leverages the <a style="color:red" target="_blank" href="https://www.turbo360.co/docs#sec7a">Turbo SDK</a> to create users, custom objects, and update resources. Please connect this project base to one of your apps on <a style="color:red" target="_blank" href="https://www.turbo360.co">Turbo 360</a> in order to run the examples.
+			</div>
+ 
+			<h3 style="margin-top:48px">User Management</h3>
+			<h4 style="color:blue">The code for the following examples is located in the "routes/users.js" file of this project.</h4>
+			<hr />
+
+			<div class="row">
+				<div class="col-md-6 col-md-offset-0">
+					<div class="gray-box">
+						<h4>Create Users (registration)</h4>
+						<p>The following creates users with email and password:</p>
+						<form action="/users/register" method="post">
+							<input type="text" class="form-control" name="email" placeholder="Email" /><br />
+							<input type="password" class="form-control" name="password" placeholder="Password" /><br />
+							<button type="submit" class="btn btn-success">Register</button>
+						</form>
+
+						<h4 style="margin-top:48px">Login (authenticate users)</h4>
+						<p>The following logs users in:</p>
+						<form action="/users/login" method="post">
+							<input type="text" class="form-control" name="email" placeholder="Email" /><br />
+							<input type="password" class="form-control" name="password" placeholder="Password" /><br />
+							<button type="submit" class="btn btn-success">Log In</button>
+						</form>
+
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="gray-box">
+						<h4>Fetch Users</h4>
+						<ul style="padding-left:16px">
+							<li>This endpoint fetches all users for your project: <a target="blank" href="/users">CLICK HERE</a></li>
+							<li>This endpoint fetches a specific user: <a target="blank" href="/users/123">CLICK HERE</a></li>
+						</ul>
+					</div>
+
+					<div class="gray-box">
+						<h4>Current User</h4>
+						<ul style="padding-left:16px">
+							<li>
+								This endpoint return data for the current user, if there is one: <a target="blank" href="/users/currentuser">CLICK HERE</a>
+								<br /><br />
+								<p>If there is no current user, log in then click this endpoint again.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+  <!-- Turbo library imports: jQuery, Turbo CDN, sample app.js -->
+  <script type="text/javascript" src="/js/jquery.js"></script>
+  <script type="text/javascript" src="https://cdn.turbo360-dev.com/dist/turbo.min.js"></script>
+  <script type="text/javascript" src="/js/app.js"></script> <!-- Your app specific code -->
+</body>
+</html>

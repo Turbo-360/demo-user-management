@@ -1,0 +1,27 @@
+{
+  "name": "base-app",
+  "version": "0.0.0",
+  "server": false,
+  "private": true,
+  "scripts": {
+    "test": "",
+    "build": ""
+  },
+  "dependencies": {
+    "turbo360": "^1.4.99",
+    "vertex360": "0.0.85"
+  },
+  "devDependencies": {
+    "express": "latest",
+    "nodemon": "latest",
+    "rimraf": "latest"
+  },
+  "functions": {
+    "turbo360": "latest"
+  },
+  "app": "TURBO_APP_ID",
+  "deploy": [
+    "."
+  ],
+  "format": "vertex"
+}
