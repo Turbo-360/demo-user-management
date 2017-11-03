@@ -1,7 +1,8 @@
 # Demo - User Management
 
 This project was built with Turbo 360. To learn more, click here: https://www.turbo360.co.
-IMPORTANT: This example will not run without a Turbo app connected to it. To create one, please visit https://www.turbo360.co and create a free app.
+
+### IMPORTANT: This example will not run without a Turbo app connected to it. To create one, please visit https://www.turbo360.co and create a free app.
 
 ## Instructions
 After cloning into repo, cd to project root directory and run npm install:
