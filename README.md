@@ -2,7 +2,7 @@
 
 This project was built with Turbo 360. To learn more, click here: https://www.turbo360.co.
 
-### IMPORTANT: This example will not run without a Turbo app connected to it. To create one, please visit https://www.turbo360.co and create a free app then connect it to this project with the following command:
+#### IMPORTANT: This example will not run without a Turbo app connected to it. To create one, please visit https://www.turbo360.co and create a free app then connect it to this project with the following command:
 
 ```
 $ turbo app APP_ID
